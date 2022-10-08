@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 13490541}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -263,7 +263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13490535}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.7598886, y: 0.78260183, z: 11.847505}
+  m_LocalPosition: {x: -4.74, y: 0.78260183, z: 11.847505}
   m_LocalScale: {x: 0.39024, y: 0.19293, z: 1.5514}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -303,7 +303,7 @@ GameObject:
   - component: {fileID: 114870339}
   m_Layer: 0
   m_Name: Cube (2)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -397,7 +397,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114870338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9, y: 0.78260183, z: 11.847505}
+  m_LocalPosition: {x: -5.880111, y: 0.78260183, z: 11.847505}
   m_LocalScale: {x: 0.39024, y: 0.19293, z: 1.5514}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -627,7 +627,7 @@ GameObject:
   - component: {fileID: 1169698264}
   m_Layer: 0
   m_Name: Cube (3)
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -721,7 +721,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169698263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.25, y: 0.78260183, z: 11.847505}
+  m_LocalPosition: {x: -7.230111, y: 0.78260183, z: 11.847505}
   m_LocalScale: {x: 0.39024, y: 0.19293, z: 1.5514}
   m_ConstrainProportionsScale: 0
   m_Children: []
