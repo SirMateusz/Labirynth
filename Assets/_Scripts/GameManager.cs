@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] int timeToEnd = 30;
 
+    [SerializeField] int points = 0, redKey = 0, greenKey = 0, goldKey = 0;
+
     bool isPaused = false, endGame = false, win = false;
 
     void Start()
@@ -53,5 +55,23 @@ public class GameManager : MonoBehaviour
         CancelInvoke("Timer");
         if (win) Debug.Log("You win");
         else Debug.Log("You lose");
+    } 
+
+    public void AddPoints(int _points) => points += _points;
+
+    public void AddTime(int _time) => timeToEnd += _time;
+
+    public void FreezeTime(int _freeze)
+    {
+        Debug.Log("frozen");
+        CancelInvoke("Timer");
+        InvokeRepeating("Timer", _freeze, 1);
     }
+
+    public void AddKey(KeyColor color)
+    {
+        if (color == KeyColor.Gold) goldKey++; 
+        else if (color == KeyColor.Red) redKey++;
+        else if (color == KeyColor.Green) greenKey++;
+    } 
 }

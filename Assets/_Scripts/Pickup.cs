@@ -4,9 +4,13 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public void PickedUp()
+    public virtual void PickedUp()
     {
-        Debug.Log("Picked Up");
         Destroy(this.gameObject);
+    }
+
+    public void Rotation(float _speed)
+    {
+        transform.Rotate(new Vector3(0f, 5f, 0f) * Time.deltaTime * _speed);
     }
 }
