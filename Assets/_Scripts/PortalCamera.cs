@@ -41,4 +41,9 @@ public class PortalCamera : MonoBehaviour
         PortalCameraController();    
     }
 
+    public void SetMyAngle(float angle)
+    {
+        myAngle = angle;
+    }
+
 }
