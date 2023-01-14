@@ -45,5 +45,4 @@ public class PortalCamera : MonoBehaviour
     {
         myAngle = angle;
     }
-
 }

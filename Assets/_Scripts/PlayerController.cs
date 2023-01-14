@@ -59,6 +59,12 @@ public class PlayerController : MonoBehaviour
                     break;
             }
         }
+
+        if (Physics.Raycast(materialCheck.position, transform.TransformDirection(Vector3.down), out hit, 0.4f))
+        {
+            if (hit.collider.gameObject.tag == "Hide") gameObject.tag = "Hide";
+            else gameObject.tag = "Player";
+        }
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit) {

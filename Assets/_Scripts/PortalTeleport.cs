@@ -41,7 +41,7 @@ public class PortalTeleport : MonoBehaviour
             if (dotProduct < 0f)
             {
                 float rotationDiff = Quaternion.Angle(transform.rotation, receiver.rotation);
-                rotationDiff += 0;
+                rotationDiff += 180;
 
                 player.Rotate(Vector3.up, rotationDiff);
 

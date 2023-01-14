@@ -18,6 +18,7 @@ public class CameraController : MonoBehaviour
     void Update()
     {
         CameraLook();
+        OpenDoors();
     }
 
     private void CameraLook()
@@ -30,6 +31,22 @@ public class CameraController : MonoBehaviour
 
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         player.Rotate(Vector3.up * mouseX);
+    }
+
+    private void OpenDoors()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 1.5f))
+        {
+            if (hit.collider.gameObject.tag == "Door")
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    hit.collider.gameObject.GetComponent<DoorController>().OpenDoors();
+                }
+            }
+        }
     }
     
 }

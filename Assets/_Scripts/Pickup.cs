@@ -6,6 +6,7 @@ public class Pickup : MonoBehaviour
 {
     public virtual void PickedUp()
     {
+        AudioController.audioController.Play("pickup");
         Destroy(this.gameObject);
     }
 

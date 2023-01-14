@@ -7,6 +7,8 @@ TagManager:
   - Slow
   - Fast
   - PickUp
+  - Enemy
+  - Door
   layers:
   - Default
   - TransparentFX
